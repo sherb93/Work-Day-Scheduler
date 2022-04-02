@@ -21,7 +21,7 @@ for (i = 0; i < forms.length; i++){
     } else if (adjustedTime === 12) {
         $(labels[i]).text(`${adjustedTime}PM`);
     } else {
-        $(labels[i]).text(`${adjustedTime - 11}PM`);
+        $(labels[i]).text(`${adjustedTime - 12}PM`);
     };
 };
 
