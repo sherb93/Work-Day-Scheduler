@@ -1,8 +1,5 @@
 var forms = $("form");
-var labels = $("label");
 var textAreas = $("textarea");
-var buttons = $("button");
-
 // Variable stores current hour using military time (0-23) converts string output to number
 var currentHour = parseInt(moment().format("H"));
 
@@ -53,17 +50,11 @@ $("form").on("click", ".saveBtn", function(event) {
     localStorage.setItem($(currentTask).data("row"), $(currentTask).val());
 });
 
-// So I need to iterate through textareas to see if they match any of the keys in the localStorage
-// That means each textarea needs to individually iterate though all the localStorage keys
-// To make an array of localStorage keys = Object.keys(localStorage);
 
-// for (i = 0; i < forms.length; i++){
+// Iterates through local storage keys and pairs them with data-row values
+for (i = 0; i < localStorage.length; i++) {
+    var currentKey = Object.keys(localStorage)[i];
+    var currentValue = Object.values(localStorage)[i];
 
-//     if ($(textAreas[i]) == )
-
-// for (i = 0; i < localStorage.length; i++) {
-//     var previousTask = localStorage.getItem();
-//     console.log(previousTask);
-// };
-// }
-// console.log(Object.keys(localStorage));
+    $( '[data-row=' + currentKey + ']' ).text(currentValue);
+};
