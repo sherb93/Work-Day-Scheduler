@@ -1,24 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-size: 16px;
   line-height: 1;
+  background: rgba(188, 235, 231, 0.4);
 }
 
 textarea {
   background: transparent;
   border: none;
-  resize: none;
-  color: #000000;
   border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  box-shadow: inset 0px 0px 9px 5px rgba(0,0,0,0.11);
   padding: 10px;
+  resize: none;
+  font-family: 'Permanent Marker', sans-serif;
+  color: #000000;
 }
 
 .jumbotron {
-  text-align: center;
+  text-align: right;
   background-color: transparent;
   color: black;
   border-radius: 0;
   border-bottom: 10px solid black;
+}
+
+.title {
+  font-weight: 700;
 }
 
 .description {
@@ -37,13 +47,12 @@ textarea {
 }
 
 .hour {
-  background-color: #ffffff;
   color: #000000;
   border-top: 1px dashed #000000;
 }
 
 .past {
-  background-color: #d3d3d3;
+  background-color: rgba(237, 245, 244);
   color: black;
 }
 
@@ -62,10 +71,12 @@ textarea {
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   background-color: #06aed5;
+  font-weight: 700;
   color: white;
 }
 
-.saveBtn i:hover {
-  font-size: 20px;
-  transition: all 0.3s ease-in-out;
+@media only screen and (max-width: 768px) {
+  .title {
+    font-size: 50px;
+  }
 }
