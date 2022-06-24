@@ -12,7 +12,7 @@ Moment.js tracks the current time and uses that to add classes to corresponding 
 This app is deployed using GitHub pages.
 
 **Instructions**:
-1. Click this [github pages link](https://sherb93.github.io/Password-Generator/).
+1. Click this [github pages link](https://sherb93.github.io/Work-Day-Scheduler/).
 2. Type your hourly tasks into the search bar and click the corresponding save icon.
 3. If you close the app or refresh the page your tasks will be loaded in using local storage.
 
